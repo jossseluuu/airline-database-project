@@ -71,7 +71,8 @@ The database contains the following entity types, each defined with at least thr
          8. estimated_flight_time
          9. aproved_by_authority
       Examples:
-         - ()
+         - (=6818612, &6987, JFK, MAD, LIS, 15.00, 07.35, 9.35, true)
+         - (=9849685, &9615, ORD, LAX, SFO, 12.30, 18.55, 5.25, false)
   - Entity Type: AIRPORT.
       Attributes:
          1. airport_id
@@ -86,7 +87,8 @@ The database contains the following entity types, each defined with at least thr
          10. number_of_hangars
          11. number_of_parkings
       Examples:
-         - ()
+         - (A681681, KLAX, LAX, Los Angeles, United States, 33-56-32.9870N, 118-24-28.9750W, UTC -7, 4, 12, 45)
+         - (A297628, KMIA, MIAMI, Miami, United States, 25-47-43.3000N, 080-17-24.4170W, UTC -4, 4, 25, 72)
   - Entity Type: AIRCRAFT.
       Attributes:
          1. aircraft_id
@@ -99,11 +101,12 @@ The database contains the following entity types, each defined with at least thr
          8. status
          9. last_maintenance_date
          10. next_maintenance_date
-         11. assigned_base_airport_id
+         11. assigned_base_airport
          12. last_pilots_ids
          13. last_crewmembers_ids
       Examples:
-         - ()
+         - (@81656, EC9861, BOEING 777.200, 275, 573, manteinance, 9/6/2025, 12/19/2025, KLAX, #312 #523, #235 #356 #866 #834 #634 #298)
+         - (@80921, U341S3, AIRBUS 320XLR, 152, 237, on-duty, 9/3/2025, 12/6/2025, KMIA, #512 #831, #729 #109 #938)
   - Entity Type: AIRCRAFT PARKING.
       Attributes:
          1. parking_id
