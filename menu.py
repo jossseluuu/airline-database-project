@@ -57,12 +57,12 @@ menutext = """"Please select one of the following options
 if __name__ == "__main__":
 	menuOption = "1"
 	while menuOption != 'q':
-		menuOption == "1":
-		if menuOption == "1"
+		menuOption == "1"
+		if menuOption == "1":
 			printTable()
-		elif menuOption == "2"
+		elif menuOption == "2":
 			insertIntoTable()
-		elif menuOption == "3"
+		elif menuOption == "3":
 			updateRow()
-		elif menuOption == "4"
+		elif menuOption == "4":
 			deleteRowFromTable()
